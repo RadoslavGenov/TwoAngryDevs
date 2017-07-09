@@ -1,27 +1,6 @@
 /**
  * Created by radoka on 7/7/17.
  */
-
-/*
-curtain animation
-
-$(document).ready(function () {
-
-    function split() {
-        $('.pannel-left').css('left', -1000 + 'px');
-        $('.pannel-right').css('right', -1000 + 'px');
-    }
-    setTimeout(split, 1300);
-
-    //$intro.mousemove(function(e){
-    //    var amountMovedX = (e.pageX * -1/29.55);
-    //    $(this).css({transform: 'translate3d(' + (24 + amountMovedX) + 'px' + ', 0, 0)'});
-    //});
-});
-
- */
-
-
 /*
 logo spin
  */

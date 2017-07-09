@@ -24,27 +24,6 @@ body {
     z-index: 100;
 }
 
-/*
-.loader .pannel-left, .loader .pannel-right {
-    transition: all 0.3s ease-out;
-    height: 100%;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-    background-color: #161616;
-    float: left;
-    position: relative;
-}
-
-.loader .pannel-left {
-    left: 0;
-}
-
-.loader .pannel-right {
-    right: 0;
-}
-*/
-
 #nav-horizontal {
     list-style-type: none;
     overflow: hidden;
@@ -65,18 +44,7 @@ body {
     text-transform: uppercase;
     line-height: 1em;
 }
-/*
-#nav-horizontal li a {
-    text-decoration: none;
-    padding: 5px 16px;
-    display: block;
-    font-size: 15px;
-    text-align: center;
-    font-family: 'Walter Turncoat', cursive;
-    cursor: auto;
-    color: #bfbbbc;
-    z-index: 999999;
-}*/
+
 #nav-horizontal li a:hover{
     color: white;
 }
