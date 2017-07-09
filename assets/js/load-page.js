@@ -48,33 +48,40 @@ jQuery.extend( jQuery.easing,
  *
  */
 
-function spin() {
-    var $myElm = $("#logo");
+function loader(){
+    $('#logo').delay(3000).hide(0);
+    $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
+    $('#nav-bottom').delay(2000).animate({bottom: '0px'}, 1400, 'linear');
+    $('.load').delay(2000).fadeIn(1000);
 
-    function rotate(degrees) {
+    function spin() {
+        var $myElm = $("#logo");
 
-        $myElm.css({
-            '-webkit-transform': 'rotate(' + degrees + 'deg)',
-            '-moz-transform': 'rotate(' + degrees + 'deg)',
-            '-ms-transform': 'rotate(' + degrees + 'deg)',
-            'transform': 'rotate(' + degrees + 'deg)'
-        });
+        function rotate(degrees) {
+
+            $myElm.css({
+                '-webkit-transform': 'rotateY(' + degrees + 'deg)',
+                '-moz-transform': 'rotateY(' + degrees + 'deg)',
+                '-ms-transform': 'rotateY(' + degrees + 'deg)',
+                'transform': 'rotateY(' + degrees + 'deg)'
+            });
 
 
-    }
-
-    $({
-        deg: 0
-    }).animate({
-        deg: 360 * 40
-    }, {
-        duration: 3000,
-        easing: "easeInOutQuart",
-        step: function(now) {
-            var deg = now < 6000 || now > 8000 ? now / 8 : now;
-            rotate(deg);
         }
-    });
-}
 
-spin();
+        $({
+            deg: 0
+        }).animate({
+            deg: 360 * 40
+        }, {
+            duration: 3000,
+            easing: "easeInOutQuart",
+            step: function(now) {
+                var deg = now < 6000 || now > 8000 ? now / 8 : now;
+                rotate(deg);
+            }
+        });
+    }
+    spin();
+}
+loader();
