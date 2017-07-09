@@ -1,0 +1,252 @@
+#nav-top {
+    top: -100px;
+}
+
+h1 span {
+    display: block;
+}
+
+#title {
+    padding-right: 20vh;
+    font-family: 'Ropa Sans', sans-serif;
+    color: #d4d4d4;
+    font-size: 80px;
+}
+
+h3 span {
+    display: block;
+}
+
+.intro-content {
+    line-height: 30px;
+    padding-left: 30vh;
+    padding-top: 100px;
+    color: #d4d4d4;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 20px;
+}
+
+#one {
+    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
+    margin: 0;
+    padding: 6.25em 0 10.63em 0;
+    background-size: cover;
+    display: none;
+}
+
+#two {
+    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
+    margin: 0;
+    background-size: cover;
+    display: none;
+}
+
+#three {
+    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
+    margin: 0;
+    background-size: cover;
+    display: none;
+}
+
+#quality {
+    background-color: black;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 0;
+}
+
+#solutions {
+    background: url('../images/logo.svg') 50% 0 no-repeat fixed;
+    padding: 170px 0 0 0;
+}
+
+/*
+#ribbon {
+    background: url('img/512x512_slot_Cutter.png') no-repeat;
+    width: 251px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -38px;
+}
+
+#snowflakes1 {
+    background: url('img/512x512_slot_Cutter.png') no-repeat;
+    width: 24px;
+    height: 21px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: -54px;
+    left: -102px;
+}
+
+#snowflakes2 {
+    background: url('img/512x512_slot_Cutter.png') no-repeat;
+    width: 24px;
+    height: 21px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    bottom: -33px;
+    right: -100px;
+}
+
+#slide1, #slide2 {
+    width: 100%;
+}
+
+#slide1 {
+    background: url('img/512x512_slot_Cutter.png') 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+    background-size: cover;
+}
+
+#slide2 {
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 0;
+}
+
+#slide3 {
+    background: url(img/512x512_slot_Cutter.png) 50% 0 no-repeat fixed;
+    color: #fff;
+    height: 600px;
+    padding: 170px 0 0 0;
+    background-size: cover;
+}
+
+#slide4 {
+    background-color: #fff;
+    color: #333333;
+    height: 300px;
+    padding: 200px 0;
+}
+
+#slide5 {
+    background: url(img/512x512_slot_Cutter.png) 50% 0 no-repeat fixed;
+    height: 200px;
+    margin: 0 auto;
+    padding: 250px 0;
+    color: #fff;
+    background-size: cover;
+}*/
+
+#nav-bottom {
+    bottom: -100px;
+}
+
+#footerBrand {
+    color: #d4d4d4;
+    font-size: 1.125em;
+    padding-right: 25em;
+}
+
+#footerContact {
+    color: #d4d4d4;
+    font-size: 1.125em;
+    text-decoration: none;
+    display: inherit;
+    padding-left: 1.125em;
+}
+
+#footerContact:hover {
+    color: #ff180e;
+}
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 1.5625em;
+}
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoTwitter:hover {
+    background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #BD3518;
+}
+
+.social-network a.icoVimeo:hover {
+    background-color: #0590B8;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+a {
+    background-color: #D3D3D3;
+}

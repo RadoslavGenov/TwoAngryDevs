@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Angry Devs</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+</head>
+<body>
+
+<nav id="nav-top" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Two Angry Devs</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#one">intro</a></li>
+            <li><a href="#quality">quality</a></li>
+            <li><a href="#solutions">solutions</a></li>
+            <li><a href="#creativity">creativity</a></li>
+            <li><a href="#youandwe">you and we</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="logo-container"><img src="assets/images/logo.svg" alt="Two Angry Developers Logo" id="logo"></div>
+
+<div id="one" class="load">
+    <div id="wrapper" style="padding-left: 300px">
+        <div style="float: left"><img src="assets/images/logo.svg" alt="none" width="400" height="400"></div>
+        <div style="padding: 5px">
+            <h1 id="title"><span>Two</span> <span>Angry</span> <span>Developers</span></h1>
+        </div>
+    </div>
+    <h3 class="intro-content">
+        <span style="text-indent: 150px;">Brings to you a team of young and talented developers</span>
+        <span style="text-indent: 200px;">ready to deliver your custom designed software needs to life.</span>
+        <span style="text-indent: 250px;">We have the knowledge and experience needed to bring you </span>
+        <span style="text-indent: 300px;">the quality software your brand needs to achieve its goals.</span>
+        <span style="text-indent: 350px;">We will architect, design and deploy a website, an application</span>
+        <span style="text-indent: 400px;">or something completely unique tailored to your ideas.</span>
+    </h3>
+</div>
+
+<div id="two" class="load">
+    <div id="quality">
+        <img src="assets/images/800px_COLOURBOX13491175.jpg" alt="none" width="200" height="200">
+        <div class="intro-content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of
+            Lorem Ipsum.
+        </div>
+    </div>
+</div>
+
+<div id="three" class="load">
+    <div id="solutions">
+        <div class="intro-content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of
+            Lorem Ipsum.
+        </div>
+    </div>
+</div>
+
+<nav id="nav-bottom" class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid" style="display: block; float: left">
+        <div class="col-md-12">
+            <ul class="social-network social-circle">
+                <li><span id="footerBrand">Two Angry Developers : Digital and Software Solutions</span></li>
+                <li><a href="https://www.facebook.com/radoslav.p.genov" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                <li><<a href="#" id="footerContact">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $('#logo').delay(3000).hide(0);
+    $('#nav-top').delay(2000).animate({top: '0px'}, 1000, 'linear');
+    $('#nav-bottom').delay(2000).animate({bottom: '0px'}, 1000, 'linear');
+    $('.load').delay(2000).fadeIn(1000);
+</script>
+<script type="text/javascript" src="assets/js/load-page.js"></script>
+</body>
+</html>
