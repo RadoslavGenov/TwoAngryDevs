@@ -1,22 +1,39 @@
+
+/*1. Header */
 #nav-top {
     top: -100px;
 }
-
-h1 span {
+/*2. Logo section*/
+#wrapper{
+    margin-left: 20%;
+}
+#wrapper .logo{
+    float: left;
+}
+#wrapper .logo img{
+    width: 250px;
+    margin-top:15%;
+}
+#wrapper h1 span {
     display: block;
 }
-
+#wrapper .company-name{
+    float:left;
+    margin-left:5%;
+    padding: 5px;
+}
 #title {
     padding-right: 20vh;
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: FireUp!important;
     color: #d4d4d4;
     font-size: 80px;
 }
-
-h3 span {
-    display: block;
+#wrapper:after{
+    content: " ";
+    clear: both;
+    display: table;
 }
-
+/*3. Sub-logo section*/
 #intro-content {
     line-height: 30px;
     padding-left: 30vh;
@@ -25,65 +42,32 @@ h3 span {
     font-family: 'Ropa Sans', sans-serif;
     font-size: 20px;
 }
-
-#quality-content {
-    line-height: 30px;
-    padding-left: 30vh;
-    padding-top: 100px;
-    color: #d4d4d4;
-    font-family: 'Ropa Sans', sans-serif;
-    font-size: 20px;
+#intro-content span {
+    display: block;
 }
-
-#solutions-content {
-    line-height: 30px;
-    padding-left: 30vh;
-    padding-top: 100px;
-    color: #d4d4d4;
-    font-family: 'Ropa Sans', sans-serif;
-    font-size: 20px;
-    padding: 100px;
+#intro-content span:nth-of-type(1){
+    text-indent: 8%;
 }
-
-#background-three{
-    margin: 0;
-    background-size: cover;
+#intro-content span:nth-of-type(2){
+    text-indent: 11%;
 }
-
-#one {
-    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
-    margin: 0;
-    padding: 6.25em 0 10.63em 0;
-    background-size: cover;
-    display: none;
+#intro-content span:nth-of-type(3){
+    text-indent: 14%;
 }
-
-#two {
-    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
-    margin: 0;
-    background-size: cover;
-    display: none;
+#intro-content span:nth-of-type(4){
+    text-indent: 17%;
 }
-
-#three {
-    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
-    margin: 0;
-    background-size: cover;
-    display: none;
+#intro-content span:nth-of-type(5){
+    text-indent: 20%;
 }
-
-#quality {
-    background-color: black;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 200px 0;
+#intro-content span:nth-of-type(6){
+    text-indent: 23%;
 }
-
-#solutions {
-    background: url('../images/logo.svg') 50% 0 no-repeat fixed;
-    padding: 170px 0 0 0;
+/*4. Footer */
+.navbar-fixed-bottom{
+    left: 0!important;
+    right: 0!important;
 }
-
 
 #nav-bottom {
     bottom: -100px;
@@ -195,4 +179,14 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
     background-color: #D3D3D3;
+}
+
+/*5. Sections*/
+/*5.1 Section One*/
+#one {
+    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
+    margin: 0;
+    padding: 6.25em 0 10.63em 0;
+    background-size: cover;
+    display: none;
 }

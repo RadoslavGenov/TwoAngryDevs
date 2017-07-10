@@ -100,90 +100,45 @@
 -->
 
 <div id="one" class="load">
-    <div id="wrapper" style="padding-left: 300px">
-        <div style="float: left"><img src="assets/images/logo.svg" alt="none" width="400" height="400"></div>
-        <div style="padding: 5px">
+    <div id="wrapper">
+        <div class="logo">
+            <img src="assets/images/logo.svg" alt="Two Angry Developers Ltd. logo">
+        </div>
+        <div class="company-name">
             <h1 id="title"><span>Two</span> <span>Angry</span> <span>Developers</span></h1>
         </div>
     </div>
     <h3 id="intro-content">
-        <span style="text-indent: 150px;">Brings to you a team of young and talented developers</span>
-        <span style="text-indent: 200px;">ready to deliver your custom designed software needs to life.</span>
-        <span style="text-indent: 250px;">We have the knowledge and experience needed to bring you </span>
-        <span style="text-indent: 300px;">the quality software your brand needs to achieve its goals.</span>
-        <span style="text-indent: 350px;">We will architect, design and deploy a website, an application</span>
-        <span style="text-indent: 400px;">or something completely unique tailored to your ideas.</span>
+        <span>Brings to you a team of young and talented developers</span>
+        <span>ready to deliver your custom designed software needs to life.</span>
+        <span>We have the knowledge and experience needed to bring you </span>
+        <span>the quality software your brand needs to achieve its goals.</span>
+        <span>We will architect, design and deploy a website, an application</span>
+        <span>or something completely unique tailored to your ideas.</span>
     </h3>
-</div>
-
-<div id="two" class="load">
-    <div id="quality">
-        <img src="assets/images/800px_COLOURBOX13491175.jpg" alt="none" width="200" height="200">
-        <div id="quality-content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make
-            a
-            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-            versions
-            of
-            Lorem Ipsum.
-        </div>
-    </div>
-</div>
-
-<div id="three" class="load">
-    <div id="background-three">
-        <div id="solutions">
-            <div id="solutions-content">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's
-                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                to
-                make
-                a
-                type specimen book. It has survived not only five centuries, but also the leap into electronic
-                typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                containing
-                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions
-                of
-                Lorem Ipsum.
-            </div>
-        </div>
-    </div>
 </div>
 
 <!-- footer -->
 <nav id="nav-bottom" class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="container-fluid" style="display: block; float: left">
-        <div class="col-md-12">
-            <ul class="social-network social-circle">
-                <li><span id="footerBrand">Two Angry Developers : Digital and Software Solutions</span></li>
-                <li><a href="https://www.facebook.com/radoslav.p.genov" class="icoFacebook" title="Facebook"><i
-                        class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                <li><<a href="#" id="footerContact">Contact Us</a></li>
-            </ul>
-        </div>
+    <div class="container-fluid">
+        <ul class="social-network social-circle">
+            <div class="row">
+                <div class="col-sm-6" >
+                    <li><span id="footerBrand">Two Angry Developers : Digital and Software Solutions</span></li>
+                </div>
+                <div class="col-sm-push-2 col-sm-4">
+                    <li><a href="https://www.facebook.com/radoslav.p.genov" class="icoFacebook" title="Facebook"><i
+                            class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li><<a href="#" id="footerContact">Contact Us</a></li>
+                </div>
+            </div>
+        </ul>
     </div>
 </nav>
 
-<script>
-function loader(){
-    $('#logo').delay(3000).hide(0);
-    $('#nav-top').delay(2000).animate({top: '0px'}, 1000, 'linear');
-    $('#nav-bottom').delay(2000).animate({bottom: '0px'}, 1000, 'linear');
-    $('.load').delay(2000).fadeIn(1000);
-}
-</script>
 <script type="text/javascript" src="assets/js/load-page.js"></script>
 </body>
 </html>
