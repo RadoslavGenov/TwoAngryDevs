@@ -1,15 +1,17 @@
 @font-face {
-  font-family: 'Fire';
-  src: url('../fonts/fire/Fire_Vector.ttf');
+    font-family: 'Fire';
+    src: url('../fonts/fire/Fire_Vector.ttf');
 }
+
 @font-face {
-  font-family: 'FireUp';
-  src: url('../fonts/fire/Fire_Vector_Up.ttf');
+    font-family: 'FireUp';
+    src: url('../fonts/fire/Fire_Vector_Up.ttf');
 }
 
 a, a:hover {
     text-decoration: none;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -17,44 +19,12 @@ a, a:hover {
 
 html {
     background-color: #191919;
+    min-height: 100%;
 }
 
 body {
-    height: 100%;
     width: 590%;
-}
-
-.loader {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 100;
-}
-
-#nav-horizontal {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    width: 100%;
-    display: none;
-}
-
-#li-wrapper {
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-#nav-horizontal li {
-    float: left;
-    width: 16.6%;
-    text-transform: uppercase;
-    line-height: 1em;
-}
-
-#nav-horizontal li a:hover{
-    color: white;
+    min-height: 100%;
 }
 
 #logo-container {

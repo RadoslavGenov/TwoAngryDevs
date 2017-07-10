@@ -1,38 +1,45 @@
-
 /*1. Header */
 #nav-top {
     top: -100px;
 }
+
 /*2. Logo section*/
-#wrapper{
+#wrapper {
     margin-left: 20%;
 }
-#wrapper .logo{
+
+#wrapper .logo {
     float: left;
 }
-#wrapper .logo img{
+
+#wrapper .logo img {
     width: 250px;
-    margin-top:15%;
+    margin-top: 15%;
 }
+
 #wrapper h1 span {
     display: block;
 }
-#wrapper .company-name{
-    float:left;
-    margin-left:5%;
+
+#wrapper .company-name {
+    float: left;
+    margin-left: 5%;
     padding: 5px;
 }
+
 #title {
     padding-right: 20vh;
-    font-family: FireUp!important;
+    font-family: FireUp !important;
     color: #d4d4d4;
     font-size: 80px;
 }
-#wrapper:after{
+
+#wrapper:after {
     content: " ";
     clear: both;
     display: table;
 }
+
 /*3. Sub-logo section*/
 #intro-content {
     line-height: 30px;
@@ -42,31 +49,39 @@
     font-family: 'Ropa Sans', sans-serif;
     font-size: 20px;
 }
+
 #intro-content span {
     display: block;
 }
-#intro-content span:nth-of-type(1){
+
+#intro-content span:nth-of-type(1) {
     text-indent: 8%;
 }
-#intro-content span:nth-of-type(2){
+
+#intro-content span:nth-of-type(2) {
     text-indent: 11%;
 }
-#intro-content span:nth-of-type(3){
+
+#intro-content span:nth-of-type(3) {
     text-indent: 14%;
 }
-#intro-content span:nth-of-type(4){
+
+#intro-content span:nth-of-type(4) {
     text-indent: 17%;
 }
-#intro-content span:nth-of-type(5){
+
+#intro-content span:nth-of-type(5) {
     text-indent: 20%;
 }
-#intro-content span:nth-of-type(6){
+
+#intro-content span:nth-of-type(6) {
     text-indent: 23%;
 }
-/*4. Footer */
-.navbar-fixed-bottom{
-    left: 0!important;
-    right: 0!important;
+
+/*4. Footer
+.navbar-fixed-bottom {
+    left: 0 !important;
+    right: 0 !important;
 }
 
 #nav-bottom {
@@ -103,7 +118,7 @@ ul.social-network li {
     margin: 0 1.5625em;
 }
 
-/* footer social icons */
+/* footer social icons
 .social-network a.icoRss:hover {
     background-color: #F56505;
 }
@@ -180,10 +195,10 @@ a.socialIcon:hover, .socialHoverClass {
 a {
     background-color: #D3D3D3;
 }
-
+*/
 /*5. Sections*/
-.parallax-section{
-    width:17%;
+.parallax-section {
+    width: 17%;
     float: left;
     height: 100vh;
     background-color: black;
@@ -193,7 +208,7 @@ a {
     display: none;
 }
 
-.spacer{
+.spacer {
     width: 3%;
     height: 100vh;
     float: left;
@@ -205,4 +220,19 @@ a {
 #one {
     padding: 6.25em 0 10.63em 0;
     height: 100vh;
+}
+
+/* test for parallax */
+#two .layer-one, #two .layer-two, #two .layer-three {
+    position: absolute;
+    font-size: 50px;
+    line-height: 50px;
+    width: 300px;
+    top: 50%;
+    text-align: center;
+    color: #133f71;
+}
+
+#two {
+    position: relative;
 }

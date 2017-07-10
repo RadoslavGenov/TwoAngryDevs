@@ -2,16 +2,16 @@
  * Created by radoka on 7/7/17.
  */
 /*
-logo spin
+ logo spin
  */
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
-jQuery.extend( jQuery.easing,
+jQuery.extend(jQuery.easing,
     {
 
         easeInOutQuart: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
-            return -c/2 * ((t-=2)*t*t*t - 2) + b;
+            if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
+            return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
         }
     });
 
@@ -48,7 +48,7 @@ jQuery.extend( jQuery.easing,
  *
  */
 
-function loader(){
+function loader() {
     $('#logo').delay(3000).hide(0);
     $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
     $('#nav-bottom').delay(2000).animate({bottom: '0px'}, 1400, 'linear');
@@ -76,12 +76,13 @@ function loader(){
         }, {
             duration: 3000,
             easing: "easeInOutQuart",
-            step: function(now) {
+            step: function (now) {
                 var deg = now < 6000 || now > 8000 ? now / 8 : now;
                 rotate(deg);
             }
         });
     }
+
     spin();
 }
 loader();
