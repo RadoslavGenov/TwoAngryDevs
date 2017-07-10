@@ -182,11 +182,27 @@ a {
 }
 
 /*5. Sections*/
-/*5.1 Section One*/
-#one {
-    background: url('../images/background-final.png') 50% 0 no-repeat fixed;
-    margin: 0;
-    padding: 6.25em 0 10.63em 0;
+.parallax-section{
+    width:17%;
+    float: left;
+    height: 100vh;
+    background-color: black;
+    display: none;
+    background: url("../images/background-final.png") 50% 0 no-repeat fixed;
     background-size: cover;
     display: none;
+}
+
+.spacer{
+    width: 3%;
+    height: 100vh;
+    float: left;
+    background-color: #00b3ee;
+    display: none;
+}
+
+/*5.1 Section One*/
+#one {
+    padding: 6.25em 0 10.63em 0;
+    height: 100vh;
 }
