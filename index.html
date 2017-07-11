@@ -21,130 +21,114 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 </head>
 <body>
-
-
-<script>
-    /* script for changing scroll WHICH FUCKING SUCKS
-    $(function() {
-        $('body').mousewheel(function(evt, chg) {
-            this.scrollLeft -= (chg * 1); //need a value to speed up the change
-            evt.preventDefault();
-        });
-    });
-    $(function() {
-        $(document).on('mousewheel DOMMouseScroll', function(evt, chg) {
-            this.scrollLeft -= (chg * 1); //need a value to speed up the change ** for firefox but fucks up chrome WTF
-            evt.preventDefault();
-        });
-    });*/
-</script>
-
-
-<!-- navigation bar top -->
-<nav id="nav-top" class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Two Angry Devs</a>
+<div class="scroll">
+    <!-- navigation bar top -->
+    <nav id="nav-top" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Two Angry Devs</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#one">intro</a></li>
+                <li><a href="#two">quality</a></li>
+                <li><a href="#three">creativity</a></li>
+                <li><a href="#four">you and we</a></li>
+                <li><a href="#five">contact</a></li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-            <li><a href="#one">intro</a></li>
-            <li><a href="#two">quality</a></li>
-            <li><a href="#three">creativity</a></li>
-            <li><a href="#four">you and we</a></li>
-            <li><a href="#five">contact</a></li>
-        </ul>
+    </nav>
+
+
+    <div id="logo-container"><img src="assets/images/logo.png" alt="Two Angry Developers Logo" id="logo"></div>
+
+    <script>
+        var controller = new ScrollMagic.Controller({vertical: false});
+    </script>
+
+    <!-- sections -->
+    <div id="one" class="parallax-section load">
+        <div id="wrapper">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Two Angry Developers Ltd. logo">
+            </div>
+            <div class="company-name">
+                <h1 id="title"><span>Two</span> <span>Angry</span> <span>Developers</span></h1>
+            </div>
+        </div>
+        <h3 id="intro-content">
+            <span>Brings to you a team of young and talented developers</span>
+            <span>ready to deliver your custom designed software needs to life.</span>
+            <span>We have the knowledge and experience needed to bring you </span>
+            <span>the quality software your brand needs to achieve its goals.</span>
+            <span>We will architect, design and deploy a website, an application</span>
+            <span>or something completely unique tailored to your ideas.</span>
+        </h3>
     </div>
-</nav>
 
-
-<div id="logo-container"><img src="assets/images/logo.png" alt="Two Angry Developers Logo" id="logo"></div>
-
-<script>
-    var controller = new ScrollMagic.Controller({vertical: false});
-</script>
-
-<!-- sections -->
-<div id="one" class="parallax-section load">
-    <div id="wrapper">
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="Two Angry Developers Ltd. logo">
-        </div>
-        <div class="company-name">
-            <h1 id="title"><span>Two</span> <span>Angry</span> <span>Developers</span></h1>
-        </div>
+    <div class="spacer load">
+        spacer
     </div>
-    <h3 id="intro-content">
-        <span>Brings to you a team of young and talented developers</span>
-        <span>ready to deliver your custom designed software needs to life.</span>
-        <span>We have the knowledge and experience needed to bring you </span>
-        <span>the quality software your brand needs to achieve its goals.</span>
-        <span>We will architect, design and deploy a website, an application</span>
-        <span>or something completely unique tailored to your ideas.</span>
-    </h3>
+
+    <div id="two" class="parallax-section load">
+        <div class="layer-one">TESTER</div>
+        <div class="layer-two" >TESTER</div>
+        <div class="layer-three">TESTER</div>
+    </div>
+
+    <div class="spacer load">
+        spacer
+    </div>
+
+    <div id="three" class="parallax-section load">
+        <strong>section 3</strong>
+    </div>
+
+    <div class="spacer load">
+        spacer
+    </div>
+
+    <div id="four" class="parallax-section load">
+        <strong>section 4</strong>
+    </div>
+
+    <div class="spacer load">
+        spacer
+    </div>
+
+    <div id="five" class="parallax-section load" >
+        <strong>section 5</strong>
+    </div>
+
+    <script>
+        function parallaxSectionOne() {
+            // parallax script
+            var tween = new TimelineMax()
+                .add([
+                    TweenMax.fromTo("#two .layer-one", 1, {scale: 3, autoAlpha: 0.3, left: 250}, {//starts at 250px end at 900
+                        left: 900,
+                        ease: Linear.easeNone
+                    }),
+                    TweenMax.fromTo("#two .layer-two", 1, {scale: 2, autoAlpha: 0.7, left: 350}, {
+                        left: 800,
+                        ease: Linear.easeNone
+                    }),
+                    TweenMax.fromTo("#two .layer-three", 1, {scale: 1, autoAlpha: 1, left: 500}, {
+                        left: 700,
+                        ease: Linear.easeNone
+                    })
+                ]);
+
+            var scene = new ScrollMagic.Scene({triggerElement: "#two", duration: $(window).width()})
+                .setTween(tween)
+                //.addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+                .addTo(controller);
+        }
+        parallaxSectionOne();
+    </script>
 </div>
-
-<div class="spacer load">
-    spacer
-</div>
-
-<div id="two" class="parallax-section load">
-    <div class="layer-one">TESTER</div>
-    <div class="layer-two" >TESTER</div>
-    <div class="layer-three">TESTER</div>
-</div>
-
-<div class="spacer load">
-    spacer
-</div>
-
-<div id="three" class="parallax-section load">
-    <strong>section 3</strong>
-</div>
-
-<div class="spacer load">
-    spacer
-</div>
-
-<div id="four" class="parallax-section load">
-    <strong>section 4</strong>
-</div>
-
-<div class="spacer load">
-    spacer
-</div>
-
-<div id="five" class="parallax-section load" >
-    <strong>section 5</strong>
-</div>
-
-<script>
-    function parallaxSectionOne() {
-        // parallax script
-        var tween = new TimelineMax()
-            .add([
-                TweenMax.fromTo("#two .layer-one", 1, {scale: 3, autoAlpha: 0.3, left: 250}, {//starts at 250px end at 900
-                    left: 900,
-                    ease: Linear.easeNone
-                }),
-                TweenMax.fromTo("#two .layer-two", 1, {scale: 2, autoAlpha: 0.7, left: 350}, {
-                    left: 800,
-                    ease: Linear.easeNone
-                }),
-                TweenMax.fromTo("#two .layer-three", 1, {scale: 1, autoAlpha: 1, left: 500}, {
-                    left: 700,
-                    ease: Linear.easeNone
-                })
-            ]);
-
-        var scene = new ScrollMagic.Scene({triggerElement: "#two", duration: $(window).width()})
-            .setTween(tween)
-            //.addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
-            .addTo(controller);
-    }
-    parallaxSectionOne();
-</script>
 
 <script type="text/javascript" src="assets/js/load-page.js"></script>
-
+<script type="text/javascript" src="assets/js/invertScroll.js"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>
