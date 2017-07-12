@@ -147,14 +147,14 @@
     transition: all 0.2s ease-out;
     width: 26px;
     height: 26px;
-    border: 8px solid #9B2A15;
+    border: 8px solid #ffffff;
     border-radius: 50%;
     background-color: #203240;
     position: absolute;
     top: -13px;
 }
 .a-active div, .tm-active, .tm:hover{
-    border: 13px solid #9B2A15;
+    border: 13px solid #ffffff;
 }
 .tm-one     {left: 0;}
 .tm-two     {left: 25%;}
