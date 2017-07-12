@@ -54,11 +54,10 @@ function loader() {
         setTimeout(function() {
             $('body').addClass("clear");
         }, 3000);
+        $('#logo').delay(3000).hide(0);
+        $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
+        $('.load').delay(2000).fadeIn(1000);
     });
-    $('#logo').delay(3000).hide(0);
-    $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
-    $('#nav-bottom').delay(2000).animate({bottom: '0px'}, 1400, 'linear');
-    $('.load').delay(2000).fadeIn(1000);
 
     function spin() {
         var $myElm = $("#logo");
@@ -92,3 +91,4 @@ function loader() {
     spin();
 }
 loader();
+

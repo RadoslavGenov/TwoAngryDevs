@@ -80,21 +80,16 @@
 
 /*5. Sections*/
 .parallax-section {
-    width: 17%;
+    width: 20%;
     float: left;
     height: 100vh;
     background-color: black;
-    background: url("../images/background-final.png") 50% 0 no-repeat fixed;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     display: none;
-}
-
-.spacer {
-    width: 3.75%;
-    height: 100vh;
-    float: left;
-    background-color: #00b3ee;
-    display: none;
+    background-image: url("../images/stars-background.png");
 }
 
 /*5.1 Section One*/
@@ -116,12 +111,25 @@
 
 #two {
     position: relative;
+    background-color: #00b3ee;
+}
+
+#three{
+    background-color: white;
+}
+
+#four{
+    background-color: #ac2925;
+}
+
+#five{
+    background-color: gold;
 }
 
 .navigator{
     position: fixed;
-    width: 20%;
-    left: 40%;
+    width: 30%;
+    left: 34%;
     bottom: 100px;
     z-index: 99999;
 }
