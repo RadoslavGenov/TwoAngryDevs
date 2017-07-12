@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e669a9e7-978a-4696-a335-1899be4d1c70" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/ChangeLog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/jquery.mousewheel.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/browserify/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/browserify/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/browserify/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/browserify/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/lib/jquery-mousewheel-master/test/scroll.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/content.css" afterPath="$PROJECT_DIR$/assets/css/content.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/styles.css" afterPath="$PROJECT_DIR$/assets/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/invertScroll.js" afterPath="$PROJECT_DIR$/assets/js/invertScroll.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/load-page.js" afterPath="$PROJECT_DIR$/assets/js/load-page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -21,31 +39,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2145">
-              <caret line="143" column="25" lean-forward="true" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+            <state relative-caret-position="865">
+              <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="load-page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/load-page.js">
+      <file leaf-file-name="invertScroll.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/invertScroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="10" />
+            <state relative-caret-position="273">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -54,8 +62,8 @@
       <file leaf-file-name="content.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/content.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1208">
-              <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+            <state relative-caret-position="660">
+              <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -73,18 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>text</find>
-      <find>.navbar-nav &gt; li</find>
-      <find>0 150</find>
-      <find>.navbar-in</find>
-      <find>font-family</find>
-      <find>font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;</find>
-      <find>.navbar-inverse .navbar-nav &gt; li &gt; a</find>
-      <find>.navbar-inverse {</find>
-      <find>border: 1px solid transparent;</find>
-      <find>container-fluid</find>
-      <find>navbar</find>
-      <find>navbar-fixed-bottom</find>
       <find>social</find>
       <find>.navbar-fixed-bottom {</find>
       <find>a:active</find>
@@ -93,7 +89,6 @@
       <find>a:focus</find>
       <find>navbar-in</find>
       <find>tit</find>
-      <find>intro</find>
       <find>solution</find>
       <find>load</find>
       <find>overflow</find>
@@ -103,7 +98,24 @@
       <find>logo-container</find>
       <find>loader</find>
       <find>bottom</find>
+      <find>layer</find>
+      <find>s</find>
+      <find>scafoo</find>
+      <find>scafo</find>
+      <find>scaf</find>
+      <find>scaffo</find>
+      <find>scaffol</find>
+      <find>scaffold</find>
+      <find>scaffoldin</find>
+      <find>body</find>
+      <find>scaffolding</find>
+      <find>hidden-xs</find>
+      <find>intro</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/bower_components</dir>
+      <dir>$PROJECT_DIR$/bower_components/bootstrap</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,10 +129,11 @@
         <option value="$PROJECT_DIR$/assets/js/landing-page.js" />
         <option value="$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/assets/css/parallax-effect.css" />
+        <option value="$PROJECT_DIR$/assets/css/content.css" />
         <option value="$PROJECT_DIR$/assets/js/load-page.js" />
         <option value="$PROJECT_DIR$/assets/css/styles.css" />
-        <option value="$PROJECT_DIR$/assets/css/content.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/invertScroll.js" />
       </list>
     </option>
   </component>
@@ -150,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,7 +186,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -194,9 +208,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2AD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2AD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2AD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2AD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -338,11 +383,12 @@
       <workItem from="1499676500187" duration="339000" />
       <workItem from="1499698587313" duration="6826000" />
       <workItem from="1499714704110" duration="6381000" />
+      <workItem from="1499795209406" duration="1620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74525000" />
+    <option name="totallyTimeSpent" value="82462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
@@ -395,20 +441,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/images/Black-And-Red-Picture-Photo.jpg" />
-    <entry file="file://$PROJECT_DIR$/assets/images/512x512_slot_BG_Menu.png" />
-    <entry file="file://$PROJECT_DIR$/assets/images/800px_COLOURBOX13491175.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4617" column="16" lean-forward="false" selection-start-line="4617" selection-start-column="9" selection-end-line="4617" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/star1600.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/stars-test.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/star.png" />
@@ -432,7 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-953">
           <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -456,7 +487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -487,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -518,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,7 +591,6 @@
     <entry file="file://$PROJECT_DIR$/assets/library/crSpline.js" />
     <entry file="file://$PROJECT_DIR$/jquery-rotate/trunk/jquery.rotate.js" />
     <entry file="file://$PROJECT_DIR$/jquery-rotate/wiki/Reference.wiki" />
-    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js" />
     <entry file="file://$PROJECT_DIR$/assets/js/logo-spin.js" />
     <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,13 +635,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4617" column="16" lean-forward="false" selection-start-line="4617" selection-start-column="9" selection-end-line="4617" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/star1600.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/stars-test.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/star.png" />
@@ -628,39 +647,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/parallax-effect.css" />
-    <entry file="file://$PROJECT_DIR$/assets/css/content.css">
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js" />
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1208">
-          <caret line="120" column="22" lean-forward="true" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        <state relative-caret-position="-16">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/less/scaffolding.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/load-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="96" column="10" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="79">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/load-page.js">
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.min.css.map">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+        <state relative-caret-position="219">
+          <caret line="0" column="215544" lean-forward="false" selection-start-line="0" selection-start-column="215544" selection-end-line="0" selection-end-column="215544" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap/dist/css/bootstrap.css.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="0" column="206322" lean-forward="false" selection-start-line="0" selection-start-column="206322" selection-end-line="0" selection-end-column="206322" />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/content.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="22" lean-forward="true" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="143" column="25" lean-forward="true" selection-start-line="143" selection-start-column="25" selection-end-line="143" selection-end-column="25" />
+        <state relative-caret-position="865">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/invertScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -18,30 +18,37 @@ a, a:hover {
 }
 
 html {
-    background-color: #191919;
+    background-color: black;
     min-height: 100%;
 }
 
 body {
     width: 590%;
     min-height: 100%;
-    overflow-x: hidden;
+    background-color: black !important;
+    overflow: hidden;
 }
+
+.clear {
+    overflow: visible;
+}
+
 .scroll {
     width: 590%;
     position: fixed;
     bottom: 0;
     left: 0;
 }
+
 #logo-container {
     top: 20%;
     left: 50%;
+    background-color: black;
     -webkit-animation: fadein 3.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3.5s; /* Firefox < 16 */
     -ms-animation: fadein 3.5s; /* Internet Explorer */
     -o-animation: fadein 3.5s; /* Opera < 12.1 */
     animation: fadein 3.5s;
-
 }
 
 @keyframes fadein {
