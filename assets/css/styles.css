@@ -30,7 +30,7 @@ body {
 }
 
 .clear {
-    overflow: visible;
+    overflow-y: visible;
 }
 
 .scroll {

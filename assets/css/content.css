@@ -117,3 +117,62 @@
 #two {
     position: relative;
 }
+
+.navigator{
+    position: fixed;
+    width: 20%;
+    left: 40%;
+    bottom: 100px;
+    z-index: 99999;
+}
+.navigator .timeline{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.navigator .timeline{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+.tm{
+    transition: all 0.2s ease-out;
+    width: 26px;
+    height: 26px;
+    border: 8px solid #9B2A15;
+    border-radius: 50%;
+    background-color: #203240;
+    position: absolute;
+    top: -13px;
+}
+.a-active div, .tm-active, .tm:hover{
+    border: 13px solid #9B2A15;
+}
+.tm-one     {left: 0;}
+.tm-two     {left: 25%;}
+.tm-three   {left: 50%;}
+.tm-four    {left: 75%;}
+.tm-five    {left: 100%;}
+.tm-captions{}
+.cp{
+    position: absolute;
+    top: 20px;
+    float: left;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    width: 25%;
+    overflow: hidden;
+}
+.cp:after, .tm-captions{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.cp-one     {left: -8.5%;}
+.cp-two     {left: 15.5%;}
+.cp-three   {left: 41.5%;}
+.cp-four    {left: 66.5%;}
+.cp-five    {left: 91.5%;}

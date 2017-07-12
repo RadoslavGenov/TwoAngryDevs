@@ -25,6 +25,7 @@
  *   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  *   THE SOFTWARE.
  **/
+
 $(document).ready(function(){
 
     (function($) {
@@ -118,9 +119,45 @@ $(document).ready(function(){
                 $.each(elements, function(i, el) {
                     var pos = Math.floor((el.width - winWidth) * percent) * -1;
                     el.el.css('left', pos);
+                    if($('.a-active .tm-active').length == 1){ 
+                        if( $(window).scrollTop()>= $('#five').position().left) {
+                            $('.tm-one, .tm-two, .tm-three, .tm-four').removeClass('tm-active');
+                            $('.tm-five').addClass('tm-active');
+                        }
+                        else if( $(window).scrollTop() >= $('#four').position().left) {
+                            $('.tm-one, .tm-two, .tm-three, .tm-five').removeClass('tm-active');
+                            $('.tm-four').addClass('tm-active');
+                        }
+                        else if( $(window).scrollTop()>= $('#three').position().left) {
+                            $('.tm-one, .tm-two, .tm-four, .tm-five').removeClass('tm-active');
+                            $('.tm-three').addClass('tm-active');
+                        }
+                        else if( $(window).scrollTop()>= $('#two').position().left) {
+                            $('.tm-one, .tm-three, .tm-four, .tm-five').removeClass('tm-active');
+                            $('.tm-two').addClass('tm-active');
+                        }
+                        else {
+                            $('.tm-two, .tm-three, .tm-four, .tm-five').removeClass('tm-active');
+                            $('.tm-one').addClass('tm-active');
+                        }
+                    }
                 });
             });
         };
     }(jQuery));
     $.jInvertScroll(['.scroll']);
+    function x() {
+            $("a").click(function() {
+                $("html, body").stop().animate({
+                    scrollTop: $($(this).attr("href")).position().left +1
+                }, 2000, 'easeInOutQuart');
+                    $('a').removeClass('a-active');
+                    $('a .tm').removeClass('tm-active');
+                    $($(this)).addClass('a-active');
+
+                return false
+            });
+            $(".scrollTop a").scrollTop()
+        }
+        x();
 });
