@@ -51,12 +51,14 @@ jQuery.extend(jQuery.easing,
 function loader() {
     //delay on load overflow visible
     $(document).ready(function () {
-        setTimeout(function() {
+        setTimeout(function () {
             $('body').addClass("clear");
         }, 3000);
         $('#logo').delay(3000).hide(0);
         $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
         $('.load').delay(2000).fadeIn(1000);
+        $('#bcg').show();
+        console.log($('#bcg'))
     });
 
     function spin() {
@@ -91,4 +93,3 @@ function loader() {
     spin();
 }
 loader();
-
