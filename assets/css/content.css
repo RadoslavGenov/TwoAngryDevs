@@ -231,7 +231,7 @@ nav li {
     position: fixed;
     width: 30%;
     left: 34%;
-    bottom: 100px;
+    bottom: -20px;
     z-index: 99999;
 }
 

@@ -57,8 +57,7 @@ function loader() {
         $('#logo').delay(3000).hide(0);
         $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
         $('.load').delay(2000).fadeIn(1000);
-        $('#bcg').show();
-        console.log($('#bcg'))
+        $('.navigator').delay(2500).animate({bottom:'80px'}, 1000);
     });
 
     function spin() {
