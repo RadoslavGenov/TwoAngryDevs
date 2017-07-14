@@ -1,3 +1,13 @@
+#bg {
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 7200px;
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+    display: none;
+}
+
 /*1. Header */
 #nav-top {
     top: -100px;
@@ -83,13 +93,8 @@
     width: 20%;
     float: left;
     height: 100vh;
-    background-color: black;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     display: none;
-    background-image: url("../images/stars-background.png");
+    position: relative;
 }
 
 /*5.1 Section One*/
@@ -110,20 +115,19 @@
 }
 
 #two {
-    position: relative;
-    background-color: #00b3ee;
+
 }
 
 #three {
-    background-color: white;
+
 }
 
 #four {
-    background-color: #ac2925;
+
 }
 
 #five {
-    background-color: gold;
+
 }
 
 /* side nav*/
@@ -157,7 +161,8 @@ nav a:hover .nav-label {
     visibility: visible;
     color: #ac2925;
 }
-.nav-hover{
+
+.nav-hover {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -165,6 +170,7 @@ nav a:hover .nav-label {
     visibility: visible;
     color: #ac2925;
 }
+
 nav .nav-dot {
     margin-left: 20px;
     display: block;

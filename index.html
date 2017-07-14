@@ -25,9 +25,11 @@
     <script src="assets/js/landing-page.js"></script>
     <script src="bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
 
+
 </head>
 
 <body>
+<div id="bg" class="load"></div>
 <div id="logo-container"><img src="assets/images/logo.png" alt="Two Angry Developers Logo" id="logo"></div>
 
 <nav>
@@ -59,9 +61,13 @@
         <span>or something completely unique tailored to your ideas.</span>
     </h3>
 </div>
-<div id="two" name="two" class="parallax-section load">
-    <strong>section 2</strong>
+
+<div id="two" class="parallax-section load">
+    <div class="layer-one">TESTER</div>
+    <div class="layer-two">TESTER</div>
+    <div class="layer-three">TESTER</div>
 </div>
+
 <div id="three" class="parallax-section load">
     <strong>section 3</strong>
 </div>
@@ -69,11 +75,9 @@
     <strong>section 4</strong>
 </div>
 
-
 <div id="five" class="parallax-section load">
     <strong>section 5</strong>
 </div>
-
 
 <div class="navigator">
     <a href="#one">
@@ -101,9 +105,33 @@
     </div>
 </div>
 
+<script>
+    var controller = new ScrollMagic.Controller({vertical: false});
+    var tween = new TimelineMax()
+        .add([
+            TweenMax.fromTo("#two .layer-one", 1, {scale: 3, autoAlpha: 0.3, left: 250}, {//starts at 250px end at 900
+                left: 900,
+                ease: Linear.easeNone
+            }),
+            TweenMax.fromTo("#two .layer-two", 1, {scale: 2, autoAlpha: 0.7, left: 350}, {
+                left: 800,
+                ease: Linear.easeNone
+            }),
+            TweenMax.fromTo("#two .layer-three", 1, {scale: 1, autoAlpha: 1, left: 500}, {
+                left: 700,
+                ease: Linear.easeNone
+            })
+        ]);
+
+    var scene = new ScrollMagic.Scene({triggerElement: "#two", duration: $(window).width()})
+        .setTween(tween)
+        .addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+        .addTo(controller);
+
+</script>
+
 <script type="text/javascript" src="assets/js/load-page.js"></script>
 <script src="assets/js/section-one.js"></script>
-
 <script>
 </script>
 </body>
