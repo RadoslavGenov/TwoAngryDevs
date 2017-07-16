@@ -2,7 +2,7 @@
     z-index: 0;
     position: absolute;
     height: 100%;
-    width: 7200px;
+    width: 500%;
     background-image: url(../images/bg.png);
     background-repeat: repeat;
     display: none;
@@ -119,7 +119,9 @@
 }
 
 #three {
-
+    text-align: center;
+    padding: 60px 0;
+    z-index: 100000;
 }
 
 #four {
@@ -130,90 +132,34 @@
 
 }
 
-/* side nav*/
-
-nav {
-    display: none;
-    position: fixed;
-    left: 10px;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: left;
-    z-index: 100;
+/* side bar*/
+#side-bar {
+    webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-nav a {
-    display: block;
-    line-height: 25px;
-    position: relative;
-    padding-right: 20px;
-    color: #ffffff;
-    text-decoration: none !important;
-}
-
-nav a:hover .nav-label {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    color: #ac2925;
-}
-
-.nav-hover {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    color: #ac2925;
-}
-
-nav .nav-dot {
-    margin-left: 20px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
+.side-bar-noscroll {
     left: 0;
-    top: 50%;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 100%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    width: 15%;
+    background-color: rgba(32, 32, 32, 0.3);
 }
 
-nav .nav-label {
-    display: block;
-    opacity: 0.5;
-    visibility: hidden;
-    -webkit-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    transform: translateX(-10px);
-    -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
-    transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
-    margin-left: 50px;
+.side-bar-scroll {
+    left: 0;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    width: 5%;
+    background-color: rgba(32, 32, 32, 0);
 }
 
-nav.is-dark a {
-    color: #212121;
-}
-
-nav.is-dark .nav-dot {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-nav.is-light a {
-    color: #ffffff;
-}
-
-nav.is-light .nav-dot {
-    background-color: rgba(255, 255, 255, 0.5);
+#side-bar > ul {
+    list-style: none;
 }
 
 nav ul {
@@ -223,7 +169,102 @@ nav ul {
 
 nav li {
     width: auto;
+}
+
+#bottom-side-bar-wrapper {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+ul.social-network {
     list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+/* side bar  social icons */
+.side {
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+#icons-content {
+    padding: 4% 0 0 20%;
+}
+
+#icons {
+    padding: 10px;
+}
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network, .social-network a.icoFacebook:hover i, .social-network, .social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+a.socialIcon:hover, .socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+a {
+    background-color: #D3D3D3;
 }
 
 /* bottom nav */
@@ -305,7 +346,7 @@ nav li {
 }
 
 .cp-one {
-    left: -8.5%;
+    left: -9.3%;
 }
 
 .cp-two {
@@ -313,13 +354,13 @@ nav li {
 }
 
 .cp-three {
-    left: 41.5%;
+    left: 40.5%;
 }
 
 .cp-four {
-    left: 66.5%;
+    left: 66%;
 }
 
 .cp-five {
-    left: 91.5%;
+    left: 91%;
 }
