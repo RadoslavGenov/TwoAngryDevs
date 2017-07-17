@@ -24,7 +24,6 @@ html {
 body {
     width: 500%;
     min-height: 100%;
-    background-color: black !important;
     overflow: hidden;
 }
 

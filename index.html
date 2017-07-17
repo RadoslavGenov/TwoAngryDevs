@@ -28,7 +28,30 @@
 </head>
 
 <body>
-<div id="bg" class="load"></div>
+<div id="bg" class="load">
+    <div id="bg-dots-one">
+        <div id="bg-dots-two"></div>
+    </div>
+</div>
+
+<script>
+    var controller = new ScrollMagic.Controller({vertical: false});
+    var tween = new TimelineMax()
+        .add([
+            TweenMax.fromTo($('#bg-dots-one'), 1, {backgroundPosition: '0 0'}, {
+                backgroundPosition: '-20% 0',
+                ease: Linear.easeNone
+            }),
+            TweenMax.fromTo($('#bg-dots-two'), 1, {backgroundPosition: '0 50%'}, {
+                backgroundPosition: '-50% 50%',
+                ease: Linear.easeNone
+            })
+        ]);
+    var scene = new ScrollMagic.Scene({triggerElement: '#bg', duration: $('#bg').width()})
+        .setTween(tween)
+        .addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+        .addTo(controller);
+</script>
 <div id="logo-container"><img src="assets/images/logo.png" alt="Two Angry Developers Logo" id="logo"></div>
 
 <div id="side-bar" class="side-bar-noscroll">
@@ -77,9 +100,7 @@
 </div>
 
 <div id="two" class="parallax-section load">
-    <div class="layer-one">IDEAS</div>
-    <div class="layer-two">IDEAS</div>
-    <div class="layer-three">IDEAS</div>
+
 </div>
 <div id="three" class="parallax-section load" style="">
     <div><?xml version="1.0" encoding="utf-8"?>
@@ -225,11 +246,198 @@
 </div>
 
 <div id="four" class="parallax-section load">
-    <strong>section 4</strong>
+    <div class="container">
+
+        <div class="row mb-70 mb-xs-40">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="section-text">
+                    Check out our offers and pricing!
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing row -->
+        <div class="row multi-columns-row">
+
+            <!-- Pricing Item -->
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="pricing-item">
+                    <div class="pricing-item-inner">
+                        <div class="pricing-wrap">
+
+                            <!-- Icon (Simple-line-icons) -->
+                            <div class="pricing-icon">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+
+                            <!-- Pricing Title -->
+                            <div class="pricing-title">
+                                Static Site
+                            </div>
+
+                            <!-- Pricing Features -->
+                            <div class="pricing-features font-alt">
+                                <ul class="sf-list pr-list">
+                                    <li> 5 Static Pages</li>
+                                    <li>Unique Design</li>
+                                    <li>Administrators Site</li>
+                                    <li>Friendly URLs</li>
+                                </ul>
+                            </div>
+
+                            <div class="pricing-num">
+                                <p> from $300</p>
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="pr-button">
+                                <a href="#" class="btn btn-mod">Learn more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <!-- Pricing Item -->
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="pricing-item">
+                    <div class="pricing-item-inner">
+                        <div class="pricing-wrap">
+
+                            <!-- Icon (Simple-line-icons) -->
+                            <div class="pricing-icon">
+                                <i class="fa fa-gift"></i>
+                            </div>
+
+                            <!-- Pricing Title -->
+                            <div class="pricing-title">
+                                Blog Site
+                            </div>
+
+                            <!-- Pricing Features -->
+                            <div class="pricing-features font-alt">
+                                <ul class="sf-list pr-list">
+                                    <li>Unlimited Daily Publications</li>
+                                    <li>Unique Design</li>
+                                    <li>Administrators Site</li>
+                                    <li>Friendly URLs</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="pricing-num">
+                                <p> from $400</p>
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="pr-button">
+                                <a href="#" class="btn btn-mod"> Learn More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <!-- Pricing Item -->
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="pricing-item">
+                    <div class="pricing-item-inner">
+                        <div class="pricing-wrap">
+
+                            <!-- Icon (Simple-line-icons) -->
+                            <div class="pricing-icon">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+
+                            <!-- Pricing Title -->
+                            <div class="pricing-title">
+                                Online Store
+                            </div>
+
+                            <!-- Pricing Features -->
+                            <div class="pricing-features font-alt">
+                                <ul class="sf-list pr-list">
+                                    <li>Products of your choice</li>
+                                    <li>Unique Design</li>
+                                    <li>Administrators Site</li>
+                                    <li>Friendly URLs</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="pricing-num">
+                                <p> from $500</p>
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="pr-button">
+                                <a href="#" class="btn btn-mod">Learn More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <!-- Pricing Item -->
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="pricing-item">
+                    <div class="pricing-item-inner">
+                        <div class="pricing-wrap">
+
+                            <!-- Icon (Simple-line-icons) -->
+                            <div class="pricing-icon">
+                                <i class="fa fa-suitcase"></i>
+                            </div>
+
+                            <!-- Pricing Title -->
+                            <div class="pricing-title">
+                                What do you prefer?
+                            </div>
+                            <!-- Pricing Features -->
+                            <div class="pricing-features font-alt">
+                                <ul class="pr-list">
+                                    <li>Personal Web Application</li>
+                                    <li>Desktop Application</li>
+                                    <li>Mobile Application</li>
+                                    <li>Maintenance of Site</li>
+                                </ul>
+                            </div>
+
+
+                            <div class="pricing-num">
+                                <p> $ --- </p>
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="pr-button">
+                                <a href="#" class="btn btn-mod">Learn More</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Pricing Item -->
+
+        </div>
+        <!-- End Pricing row -->
+
+    </div>
 </div>
 
+
 <div id="five" class="parallax-section load">
-    <strong>section 5</strong>
+    section 5
 </div>
 
 

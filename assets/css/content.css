@@ -8,6 +8,24 @@
     display: none;
 }
 
+#bg-dots-one {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+}
+
+#bg-dots-two {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../images/dots2.png);
+    background-repeat: repeat;
+}
+
 /*1. Header */
 #nav-top {
     top: -100px;
@@ -125,11 +143,280 @@
 }
 
 #four {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*section 5*/
+#five {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.section-text {
+    font-size: 30px;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.7;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pricing-item {
+    margin: 0 0 30px;
+    position: relative;
+    text-align: center;
+}
+
+.pricing-item-inner {
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.pricing-item-inner:hover {
+    border-color: #aaa;
+}
+
+.main .pricing-item-inner {
+    border-color: #aaa;
+}
+
+.pricing-wrap {
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    padding: 30px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pricing-icon {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 32px;
+    z-index: 1;
+}
+
+.pricing-title {
+    position: relative;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+
+.pr-list {
+    margin: 0 -20px 30px;
+    padding: 0;
+
+    color: #777;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pr-list li {
+    padding: 12px 20px;
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.pr-list li:first-child {
+    border-top: 1px solid #f1f1f1;
+}
+
+.pricing-num {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
 
 }
 
-#five {
+.pricing-num sup {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    top: -20px;
+    left: -3px;
+    margin-left: -7px;
+}
 
+.pr-button {
+    margin: 30px -20px 0;
+    padding-top: 30px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.pr-per {
+    color: #999;
+    font-size: 12px;
+}
+
+/* clear the first in row for any block that has the class "multi-columns-row" */
+.multi-columns-row .col-xs-6:nth-child(2n + 3) {
+    clear: left;
+}
+
+.multi-columns-row .col-xs-4:nth-child(3n + 4) {
+    clear: left;
+}
+
+.multi-columns-row .col-xs-3:nth-child(4n + 5) {
+    clear: left;
+}
+
+.multi-columns-row .col-xs-2:nth-child(6n + 7) {
+    clear: left;
+}
+
+.multi-columns-row .col-xs-1:nth-child(12n + 13) {
+    clear: left;
+}
+
+@media (min-width: 768px) {
+    /* reset previous grid */
+    .multi-columns-row .col-xs-6:nth-child(2n + 3) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-xs-4:nth-child(3n + 4) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-xs-3:nth-child(4n + 5) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-xs-2:nth-child(6n + 7) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-xs-1:nth-child(12n + 13) {
+        clear: none;
+    }
+
+    /* clear first in row for small columns */
+    .multi-columns-row .col-sm-6:nth-child(2n + 3) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-sm-4:nth-child(3n + 4) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-sm-3:nth-child(4n + 5) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-sm-2:nth-child(6n + 7) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-sm-1:nth-child(12n + 13) {
+        clear: left;
+    }
+}
+
+@media (min-width: 992px) {
+    /* reset previous grid */
+    .multi-columns-row .col-sm-6:nth-child(2n + 3) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-sm-4:nth-child(3n + 4) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-sm-3:nth-child(4n + 5) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-sm-2:nth-child(6n + 7) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-sm-1:nth-child(12n + 13) {
+        clear: none;
+    }
+
+    /* clear first in row for medium columns */
+    .multi-columns-row .col-md-6:nth-child(2n + 3) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-md-4:nth-child(3n + 4) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-md-3:nth-child(4n + 5) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-md-2:nth-child(6n + 7) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-md-1:nth-child(12n + 13) {
+        clear: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* reset previous grid */
+    .multi-columns-row .col-md-6:nth-child(2n + 3) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-md-4:nth-child(3n + 4) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-md-3:nth-child(4n + 5) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-md-2:nth-child(6n + 7) {
+        clear: none;
+    }
+
+    .multi-columns-row .col-md-1:nth-child(12n + 13) {
+        clear: none;
+    }
+
+    /* clear first in row for large columns */
+    .multi-columns-row .col-lg-6:nth-child(2n + 3) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-lg-4:nth-child(3n + 4) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-lg-3:nth-child(4n + 5) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-lg-2:nth-child(6n + 7) {
+        clear: left;
+    }
+
+    .multi-columns-row .col-lg-1:nth-child(12n + 13) {
+        clear: left;
+    }
 }
 
 /* side bar*/
