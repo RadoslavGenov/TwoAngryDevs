@@ -3,26 +3,16 @@
     position: absolute;
     height: 100%;
     width: 500%;
-    background-image: url(../images/bg.png);
+    background-image: url(../images/escheresque_ste.png);
     background-repeat: repeat;
     display: none;
 }
 
 #bg-dots-one {
     z-index: 1;
-    position: absolute;
     height: 100%;
     width: 100%;
     background-image: url(../images/dots.png);
-    background-repeat: repeat;
-}
-
-#bg-dots-two {
-    z-index: 2;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url(../images/dots2.png);
     background-repeat: repeat;
 }
 
@@ -113,6 +103,7 @@
     height: 100vh;
     display: none;
     position: relative;
+    padding: 60px 0;
 }
 
 /*5.1 Section One*/
@@ -132,8 +123,45 @@
     color: #133f71;
 }
 
-#two {
+.two-content-right {
+    /*left: 50%;*/
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #e8e8e8;
+    float: right;
+    width: 70%;
+}
 
+.two-content-left {
+    padding-left: 7%;
+    float: left;
+    color: #e8e8e8;
+    width: 30%;
+}
+
+#communication {
+    margin-bottom: 5%;
+}
+
+#development {
+    margin-bottom: 5%;
+}
+
+#communication-icon {
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#techno-icon {
+    display: block;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#check-icon {
+    display: block;
 }
 
 #three {
@@ -156,7 +184,7 @@
 .section-text {
     font-size: 30px;
     font-weight: 300;
-    color: #777;
+    color: #e8e8e8;
     line-height: 1.7;
     text-align: center;
     padding-bottom: 20px;
@@ -166,6 +194,7 @@
     margin: 0 0 30px;
     position: relative;
     text-align: center;
+    background: rgba(255, 255, 255, 0.73);
 }
 
 .pricing-item-inner {
@@ -246,7 +275,7 @@
 }
 
 .pricing-num sup {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: 'Ropa Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
     position: relative;
@@ -264,6 +293,10 @@
 .pr-per {
     color: #999;
     font-size: 12px;
+}
+
+.btn-mod {
+    color: grey;
 }
 
 /* clear the first in row for any block that has the class "multi-columns-row" */

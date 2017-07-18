@@ -1,9 +1,38 @@
 /**
- * Created by radoka on 7/16/17.
+ * Created by radoka on 7/12/17.
  */
-$(document).ready(function () {
+
+function parallax() {
+    var controller = new ScrollMagic.Controller({vertical: false});
     var $bulb = $(".st0"),
         $word = $(".st1");
+
+    var tweenBG = new TimelineMax()
+        .add([
+            TweenMax.fromTo($('#bg-dots-one'), 1, {backgroundPosition: '0% 0%'}, {
+                backgroundPosition: '-20% 0%',
+                ease: Linear.easeNone
+            })
+        ]);
+
+    var tweenSectionTwo = new TimelineMax()
+        .add([
+            TweenMax.fromTo('#container-section-two', 1, {autoAlpha: 0, x: 500}, {
+                autoAlpha: 1,
+                x: 0,
+                ease: Linear.easeNone
+            })
+        ]);
+
+    var tweenSectionFour = new TimelineMax()
+        .add([
+            TweenMax.fromTo('#container-section-four', 1, {autoAlpha: 0, x: 500}, {
+                autoAlpha: 1,
+                x: 0,
+                ease: Linear.easeNone
+            })
+        ]);
+
 
     function pathPrepare($el) {
         var lineLength = $el[0].getTotalLength();
@@ -19,9 +48,6 @@ $(document).ready(function () {
     $.each($word, function (i, val) {
         pathPrepare($(val));
     });
-
-    // init controller
-    var controller = new ScrollMagic.Controller({vertical: false});
 
     // build tween
     var tweenBulb = new TimelineMax()
@@ -89,18 +115,6 @@ $(document).ready(function () {
             }, {autoAlpha: 1, strokeDashoffset: 0, ease: Linear.easeNone})
         ]);// change color during the whole thing
 
-    // build scene
-    var sceneBulb = new ScrollMagic.Scene({
-        triggerElement: "#three",
-        triggerHook: 0.5,
-        duration: 700,
-        tweenChanges: true
-    })
-        .setTween(tweenBulb)
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-
-
     // build tween
     var tweenWord = new TimelineMax()
         .add(
@@ -164,14 +178,46 @@ $(document).ready(function () {
                 ease: Linear.easeNone
             }, {autoAlpha: 1, strokeDashoffset: 0, ease: Linear.easeNone}));// change color during the whole thing
 
+    var sceneBG = new ScrollMagic.Scene({triggerElement: '#bg', duration: $('#bg').width()})
+        .setTween(tweenBG)
+        //.addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+        .addTo(controller);
+
+    var sceneSectionTwo = new ScrollMagic.Scene({triggerElement: "#one", triggerHook: 0, duration: $(window).width()})
+        .setTween(tweenSectionTwo)
+        //.addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+        .addTo(controller);
+
+    var sceneSectionFour = new ScrollMagic.Scene({
+        triggerElement: "#three",
+        triggerHook: 0,
+        duration: $(window).width()
+    })
+        .setTween(tweenSectionFour)
+        //.addIndicators() // add indicators (requires plugin) **** shows where trigger begins and end
+        .addTo(controller);
+
     // build scene
-    var scene = new ScrollMagic.Scene({
+    var sceneBulb = new ScrollMagic.Scene({
+        triggerElement: "#three",
+        triggerHook: 0.5,
+        duration: 700,
+        tweenChanges: true
+    })
+        .setTween(tweenBulb)
+        //.addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
+    // build scene
+    var sceneWord = new ScrollMagic.Scene({
         triggerElement: "#three",
         triggerHook: 0.5,
         duration: 700,
         tweenChanges: true
     })
         .setTween(tweenWord)
-        .addIndicators() // add indicators (requires plugin)
+        //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-});
+}
+
+parallax();

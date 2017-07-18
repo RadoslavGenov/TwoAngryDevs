@@ -9,9 +9,8 @@ jQuery.easing['jswing'] = jQuery.easing['swing'];
 jQuery.extend(jQuery.easing,
     {
 
-        easeInOutQuart: function (x, t, b, c, d) {
-            if ((t /= d / 2) < 1) return c / 2 * t * t * t * t + b;
-            return -c / 2 * ((t -= 2) * t * t * t - 2) + b;
+        easeInOutQuart: function (t) {
+            return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1;
         }
     });
 
@@ -51,6 +50,11 @@ jQuery.extend(jQuery.easing,
 function loader() {
     //delay on load overflow visible
     $(document).ready(function () {
+        function scrollToElement(ele) {
+            $(window).scrollTop(ele.offset().top).scrollLeft(ele.offset().left);
+        }
+        scrollToElement($('#three'));
+
         setTimeout(function () {
             $('body').addClass("clear");
         }, 3000);
