@@ -35,16 +35,6 @@
     margin-top: 15%;
 }
 
-#wrapper h1 span {
-    display: block;
-}
-
-#wrapper .company-name {
-    float: left;
-    margin-left: 5%;
-    padding: 5px;
-}
-
 #title {
     padding-right: 20vh;
     font-family: FireUp !important;
@@ -148,20 +138,14 @@
 }
 
 #communication-icon {
-    display: block;
     margin-top: 15px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #techno-icon {
-    display: block;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
-}
-
-#check-icon {
-    display: block;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #three {
@@ -194,11 +178,13 @@
     margin: 0 0 30px;
     position: relative;
     text-align: center;
-    background: rgba(255, 255, 255, 0.73);
+    color: #e8e8e8;
+    /*background: rgba(255, 255, 255, 0.73);*/
 }
 
 .pricing-item-inner {
-    border: 1px solid #eaeaea;
+    /*border: 1px solid #eaeaea;*/
+
     vertical-align: middle;
 
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -232,7 +218,7 @@
     padding-top: 10px;
     padding-bottom: 5px;
     position: relative;
-    font-size: 32px;
+    font-size: 35px;
     z-index: 1;
 }
 
@@ -251,7 +237,7 @@
     padding: 0;
 
     color: #777;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -260,11 +246,7 @@
 .pr-list li {
     padding: 12px 20px;
     list-style: none;
-    border-bottom: 1px solid #f1f1f1;
-}
-
-.pr-list li:first-child {
-    border-top: 1px solid #f1f1f1;
+    color: #e8e8e8;
 }
 
 .pricing-num {
@@ -287,7 +269,7 @@
 .pr-button {
     margin: 30px -20px 0;
     padding-top: 30px;
-    border-top: 1px solid #f1f1f1;
+    color: #e8e8e8;
 }
 
 .pr-per {
@@ -296,7 +278,8 @@
 }
 
 .btn-mod {
-    color: grey;
+    color: #e8e8e8;
+    font-size: 16px !important;
 }
 
 /* clear the first in row for any block that has the class "multi-columns-row" */
