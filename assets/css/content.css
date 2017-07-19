@@ -1,16 +1,15 @@
 #bg {
     z-index: 0;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 500%;
     background-image: url(../images/escheresque_ste.png);
     background-repeat: repeat;
-    display: none;
 }
 
 #bg-dots-one {
     z-index: 1;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-image: url(../images/dots.png);
     background-repeat: repeat;
@@ -42,17 +41,11 @@
     font-size: 80px;
 }
 
-#wrapper:after {
-    content: " ";
-    clear: both;
-    display: table;
-}
-
 /*3. Sub-logo section*/
 #intro-content {
     line-height: 30px;
-    padding-left: 30vh;
-    padding-top: 80px;
+    margin-left: 30vh;
+    margin-top: 80px;
     color: #d4d4d4;
     font-family: 'Ropa Sans', sans-serif;
     font-size: 20px;
@@ -62,36 +55,11 @@
     display: block;
 }
 
-#intro-content span:nth-of-type(1) {
-    text-indent: 8%;
-}
-
-#intro-content span:nth-of-type(2) {
-    text-indent: 11%;
-}
-
-#intro-content span:nth-of-type(3) {
-    text-indent: 14%;
-}
-
-#intro-content span:nth-of-type(4) {
-    text-indent: 17%;
-}
-
-#intro-content span:nth-of-type(5) {
-    text-indent: 20%;
-}
-
-#intro-content span:nth-of-type(6) {
-    text-indent: 23%;
-}
-
 /*5. Sections*/
 .parallax-section {
     width: 20%;
     float: left;
     height: 100vh;
-    display: none;
     position: relative;
     padding: 60px 0;
 }
@@ -114,9 +82,8 @@
 }
 
 .two-content-right {
-    /*left: 50%;*/
     font-size: 13px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     color: #e8e8e8;
     float: right;
     width: 70%;
@@ -179,7 +146,6 @@
     position: relative;
     text-align: center;
     color: #e8e8e8;
-    /*background: rgba(255, 255, 255, 0.73);*/
 }
 
 .pricing-item-inner {
@@ -192,14 +158,6 @@
     -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-}
-
-.pricing-item-inner:hover {
-    border-color: #aaa;
-}
-
-.main .pricing-item-inner {
-    border-color: #aaa;
 }
 
 .pricing-wrap {
@@ -225,7 +183,7 @@
 .pricing-title {
     position: relative;
     margin-bottom: 40px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -447,7 +405,7 @@
     left: 0;
     position: fixed;
     z-index: 100;
-    height: 100%;
+    height: 100vh;
     width: 15%;
     background-color: rgba(32, 32, 32, 0.3);
 }
@@ -456,7 +414,7 @@
     left: 0;
     position: fixed;
     z-index: 100;
-    height: 100%;
+    height: 100vh;
     width: 5%;
     background-color: rgba(32, 32, 32, 0);
 }

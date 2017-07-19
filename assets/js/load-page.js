@@ -50,18 +50,19 @@ jQuery.extend(jQuery.easing,
 function loader() {
     //delay on load overflow visible
     $(document).ready(function () {
+
         function scrollToElement(ele) {
             $(window).scrollTop(ele.offset().top).scrollLeft(ele.offset().left);
         }
         scrollToElement($('#three'));
 
-        setTimeout(function () {
-            $('body').addClass("clear");
-        }, 3000);
-        $('#logo').delay(3000).hide(0);
-        $('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
-        $('.load').delay(2000).fadeIn(1000);
-        $('.navigator').delay(2000).animate({bottom: '80px'}, 1000);
+        //setTimeout(function () {
+        //    $('body').addClass("clear");
+        //}, 3000);
+        //$('#logo').delay(3000).hide(0);
+        //$('#nav-top').delay(2000).animate({top: '0px'}, 1400, 'linear');
+        //$('.load').delay(2000).fadeIn(1000);
+        //$('.navigator').delay(2000).animate({bottom: '80px'}, 1000);
     });
 
     function spin() {
