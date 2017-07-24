@@ -118,7 +118,6 @@
 #three {
     text-align: center;
     padding: 60px 0;
-    z-index: 100000;
 }
 
 #four {
@@ -130,6 +129,30 @@
 #five {
     text-align: center;
     padding: 50px 0;
+}
+
+.contact {
+    text-align: center;
+    padding: 200px 0;
+    color: #e8e8e8;
+}
+#contact-title{
+    font-size: 70px;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 10px;
+}
+.contact-heading {
+    font-size: 20px;
+    font-weight: 300;
+    display: inline;
+    color: #979797;
+    letter-spacing: 5px;
+}
+
+.contact-info{
+    font-size: 20px;
+    letter-spacing: 5px;
 }
 
 .section-text {
@@ -432,6 +455,14 @@ nav li {
     width: auto;
 }
 
+#lang {
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: #e8e8e8;
+    float: right;
+    width: 70%;
+}
+
 #bottom-side-bar-wrapper {
     position: absolute;
     bottom: 10px;
@@ -470,6 +501,10 @@ ul.social-network li {
 
 .social-network a.icoFacebook:hover {
     background-color: #3B5998;
+}
+
+.social-network a.icoGoogle:hover {
+    background-color: #984754;
 }
 
 .social-network a.icoLinkedin:hover {

@@ -51,11 +51,6 @@ function loader() {
     //delay on load overflow visible
     $(document).ready(function () {
 
-        function scrollToElement(ele) {
-            $(window).scrollTop(ele.offset().top).scrollLeft(ele.offset().left);
-        }
-        scrollToElement($('#three'));
-
         //setTimeout(function () {
         //    $('body').addClass("clear");
         //}, 3000);
